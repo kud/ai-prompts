@@ -1,0 +1,8 @@
+[
+  {
+    "title": "Change Tone to Polite",
+    "prompt": "Act as a content writer and editor. Rewrite the text with the following instructions:\n- Use polite tone of voice\n- Avoid hedging, be definite where possible\n- Skip apologies\n- Focus on main arguments\n- Correct spelling, grammar, and punctuation\n- Keep meaning unchanged\nUse {argument name=lang default=\"british english\"} language\n\nText: {selection}\n\nRewritten text:",
+    "creativity": "high",
+    "icon": "stars"
+  }
+]
