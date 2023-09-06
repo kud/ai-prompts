@@ -1,0 +1,8 @@
+[
+  {
+    "title": "Change Tone to I",
+    "prompt": "Given a sentence where the perspective is directed towards \"you\" (indicative of a potentially blaming stance), rephrase the sentence to start with \"I\" making it more empathetic, friendly, and indicative of expressing personal feelings, perspective, and position.\n\nExample:\n- Input: \"You never listen to me.\"\n- Output: \"I feel unheard when we talk.\"\n\nText: {selection}\n\nRewritten text:\n",
+    "creativity": "medium",
+    "icon": "stars"
+  }
+]

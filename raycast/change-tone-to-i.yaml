@@ -1,0 +1,13 @@
+- title: Change Tone to I
+  prompt: |
+    Given a sentence where the perspective is directed towards "you" (indicative of a potentially blaming stance), rephrase the sentence to start with "I" making it more empathetic, friendly, and indicative of expressing personal feelings, perspective, and position.
+
+    Example:
+    - Input: "You never listen to me."
+    - Output: "I feel unheard when we talk."
+
+    Text: {selection}
+
+    Rewritten text:
+  creativity: medium
+  icon: stars

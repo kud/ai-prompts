@@ -1,8 +1,8 @@
 [
   {
     "title": "Change Tone to Polite",
-    "prompt": "Act as a content writer and editor. Rewrite the text with the following\ninstructions:\n- Use polite tone of voice\n- Avoid hedging, be definite where possible\n- Skip apologies\n- Focus on main arguments\n- Correct spelling, grammar, and punctuation\n- Keep meaning unchanged\n\nUse {argument name=lang default=\"British English\"} language\n\nText: {selection}\n\nRewritten text:\n",
-    "creativity": "high",
+    "prompt": "Act as a content writer and editor. Rewrite the text with the following\ninstructions:\n- Use polite tone of voice\n- Avoid hedging, be definite where possible\n- Skip apologies\n- Focus on main arguments\n- Correct spelling, grammar, and punctuation\n- Keep meaning unchanged\n- Only output sentence. Don't add any comments or quotation marks.\n\nUse {argument name=lang default=\"British English\"} language\n\nText: {selection}\n\nRewritten text:\n",
+    "creativity": "medium",
     "icon": "stars"
   }
 ]

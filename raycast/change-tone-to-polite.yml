@@ -8,11 +8,12 @@
     - Focus on main arguments
     - Correct spelling, grammar, and punctuation
     - Keep meaning unchanged
+    - Only output sentence. Don't add any comments or quotation marks.
 
     Use {argument name=lang default="British English"} language
 
     Text: {selection}
 
     Rewritten text:
-  creativity: high
+  creativity: medium
   icon: stars
