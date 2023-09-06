@@ -1,0 +1,25 @@
+- title: Explain This and Translate
+  prompt: |
+    Following this template:
+
+    # {Provide the term as is}
+
+    **Explanation**:
+    {Provide a simple explanation of the term}
+
+    **Examples**:
+    {Provide examples of the term in sentences}
+
+    **Synonyms**:
+    {List synonyms of the term}
+
+    **Antonyms**:
+    {List antonyms of the term}
+
+    **Translation**:
+    {Provide only the {argument name=lang default=French} translation of the term, without any additional explanation or context}
+
+    Explain in simple words, provide examples, give synonyms, give antonyms, and give a {argument name=lang default=French} translation of this sentence, adhering to the specified format:
+    {argument name=term}
+  creativity: high
+  icon: stars
