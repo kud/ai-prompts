@@ -8,6 +8,8 @@
 
     Text: {selection}
 
+    Language: Use the original language from the input
+
     Rewritten text:
   creativity: medium
   icon: stars

@@ -1,7 +1,7 @@
 [
   {
     "title": "Explain This and Translate",
-    "prompt": "Following this template:\n\n# {Provide the term as is}\n\n**Explanation**:\n{Provide a simple explanation of the term}\n\n**Examples**:\n{Provide examples of the term in sentences}\n\n**Synonyms**:\n{List synonyms of the term}\n\n**Antonyms**:\n{List antonyms of the term}\n\n**Translation**:\n{Provide only the {argument name=lang default=French} translation of the term, without any additional explanation or context}\n\nExplain in simple words, provide examples, give synonyms, give antonyms, and give a {argument name=lang default=French} translation of this sentence, adhering to the specified format:\n{argument name=term}\n",
+    "prompt": "Template of the output:\n# {Provide the term as is without any additional explanation or context or quotation marks}\n\n**Explanation**:\n{Provide a simple explanation of the term}\n\n**Examples**:\n{Provide examples of the term in sentences}\n\n**Synonyms**:\n{List synonyms of the term as bullet points}\n\n**Antonyms**:\n{List antonyms of the term as bullet points}\n\n**Translation**:\n{Provide only the French translation of the term, without any additional explanation or context}\n\n---\n\nThanks to the template provided above, explain in simple words, provide examples, give synonyms and antonyms, and provide the French translation of this input:\n{argument name=term}\n",
     "creativity": "high",
     "icon": "stars"
   }
