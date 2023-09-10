@@ -1,8 +1,8 @@
-- title: Change Tone to Polite
+- title: Change Tone to Royal
   prompt: |
     Act as a content writer and editor. Rewrite the text with the following
     instructions:
-    - Use polite tone of voice.
+    - Use a royal tone of voice.
     - Avoid hedging, be definite where possible.
     - Skip apologies.
     - Focus on main arguments.

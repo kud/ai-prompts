@@ -1,8 +1,8 @@
 [
   {
     "title": "Change Tone to I",
-    "prompt": "Given a sentence where the perspective is directed towards \"you\" (indicative of a potentially blaming stance), rephrase the sentence to start with \"I\" making it more empathetic, friendly, and indicative of expressing personal feelings, perspective, and position.\n\nExample:\n- Input: \"You never listen to me.\"\n- Output: \"I feel unheard when we talk.\"\n\nText: {selection}\n\nLanguage: Use the original language from the input\n\nRewritten text:\n",
-    "creativity": "medium",
+    "prompt": "Given a text where the perspective is directed towards \"you\", rephrase the sentence to start with \"I\". Your response should transform the original sentiment into one that is more empathetic and indicative of personal feelings and perspective. This approach promotes constructive communication and avoids potential blame. Also only output sentence. Don't add any comments or quotation marks in the output.\n\nExample:\n  - Input: \"You never pay attention to what I'm saying.\"\n  - Output: \"I feel like my words aren't getting through to you.\"\n\nText: {selection}\n\nLanguage of the output: use {argument name=lang default=\"british english\"}\n\nRewritten text:\n",
+    "creativity": "high",
     "icon": "stars"
   }
 ]
