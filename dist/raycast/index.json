@@ -1,0 +1,58 @@
+[
+  [
+    {
+      "title": "Change Tone to I",
+      "prompt": "Given a text where the perspective is directed towards \"you\", rephrase the sentence to start with \"I\". Your response should transform the original sentiment into one that is more empathetic and indicative of personal feelings and perspective. This approach promotes constructive communication and avoids potential blame. Also only output sentence. Don't add any comments or quotation marks in the output.\n\nExample:\n  - Input: \"You never pay attention to what I'm saying.\"\n  - Output: \"I feel like my words aren't getting through to you.\"\n\nText: {selection}\n\nLanguage of the output: use {argument name=lang default=\"british english\"}\n\nRewritten text:\n",
+      "creativity": "high",
+      "icon": "stars"
+    }
+  ],
+  [
+    {
+      "title": "Change Tone to Optimistic",
+      "prompt": "Act as a content writer and editor. Rewrite the text with the following\ninstructions:\n- Use optimistic tone of voice.\n- Skip apologies.\n- Focus on main arguments.\n- Correct spelling, grammar, and punctuation.\n- Keep meaning unchanged.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:\n",
+      "creativity": "high",
+      "icon": "stars"
+    }
+  ],
+  [
+    {
+      "title": "Change Tone to Polite",
+      "prompt": "Act as a content writer and editor. Rewrite the text with the following\ninstructions:\n- Use polite tone of voice.\n- Avoid hedging, be definite where possible.\n- Skip apologies.\n- Focus on main arguments.\n- Correct spelling, grammar, and punctuation.\n- Keep meaning unchanged.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:\n",
+      "creativity": "medium",
+      "icon": "stars"
+    }
+  ],
+  [
+    {
+      "title": "Change Tone to Politically Correct",
+      "prompt": "Act as a professional content writer and editor. Rewrite the text to ensure:\n- Politically correct tone of voice.\n- Formal language.\n- Accurate facts.\n- Correct spelling, grammar, and punctuation.\n- Concise phrasing.\n- Meaning unchanged.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:\n",
+      "creativity": "medium",
+      "icon": "stars"
+    }
+  ],
+  [
+    {
+      "title": "Change Tone to Royal",
+      "prompt": "Act as a content writer and editor. Rewrite the text with the following\ninstructions:\n- Use a royal tone of voice.\n- Avoid hedging, be definite where possible.\n- Skip apologies.\n- Focus on main arguments.\n- Correct spelling, grammar, and punctuation.\n- Keep meaning unchanged.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:\n",
+      "creativity": "medium",
+      "icon": "stars"
+    }
+  ],
+  [
+    {
+      "title": "Explain This and Translate",
+      "prompt": "Template of the output:\n# {Provide the term as is without any additional explanation or context or quotation marks}\n\n**Explanation**:\n{Provide a simple explanation of the term}\n\n**Examples**:\n{Provide examples of the term in sentences}\n\n**Synonyms**:\n{List synonyms of the term as bullet points}\n\n**Antonyms**:\n{List antonyms of the term as bullet points}\n\n**Translation**:\n{Provide only the French translation of the term, without any additional explanation or context}\n\n---\n\nThanks to the template provided above, explain in simple words, provide examples, give synonyms and antonyms, and provide the French translation of this input:\n{argument name=term}\n",
+      "creativity": "high",
+      "icon": "stars"
+    }
+  ],
+  [
+    {
+      "title": "Prompt Generator",
+      "prompt": "I want you to act as a prompt generator. Firstly, I will give you a\ntitle like this: \"Act as an English Pronunciation Helper\". Then you give\nme a prompt like this: \"I want you to act as an English pronunciation\nassistant for Turkish speaking people. I will write your sentences, and you\nwill only answer their pronunciations, and nothing else. The replies must\nnot be translations of my sentences but only pronunciations. Pronunciations\nshould use Turkish Latin letters for phonetics. Do not write explanations on\nreplies. My first sentence is \"how the weather is in Istanbul?\".\" (You\nshould adapt the sample prompt according to the title I gave. The prompt\nshould be self-explanatory and appropriate to the title, don't refer to the\nexample I gave you.). My first title is \"Act as {argument name=\\\"act as\\\"}\"\n(Give me prompt only)\n",
+      "creativity": "high",
+      "icon": "stars"
+    }
+  ]
+]

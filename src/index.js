@@ -22,6 +22,9 @@ const main = async () => {
 
     const files = await fs.readdir(sourceDir)
 
+    // This array will store all the jsonData to be written to index.json
+    const allData = []
+
     for (const file of files) {
       if (path.extname(file) === ".yml") {
         const yamlFilePath = path.join(sourceDir, file)
@@ -34,9 +37,19 @@ const main = async () => {
           )
           await fs.writeFile(jsonFilePath, JSON.stringify(jsonData, null, 2))
           console.log(`Converted ${file} to ${path.basename(jsonFilePath)}`)
+
+          // Add the jsonData to our allData array
+          allData.push(jsonData)
         }
       }
     }
+
+    // After converting all files, write the allData to index.json
+    await fs.writeFile(
+      path.join(outputDir, "index.json"),
+      JSON.stringify(allData, null, 2),
+    )
+    console.log("All data written to index.json")
   } catch (error) {
     console.error("Error in main function:", error)
   }
