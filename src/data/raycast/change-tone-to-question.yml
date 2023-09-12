@@ -1,7 +1,8 @@
-title: Change Tone to Polite
+title: Change Tone to Question
 prompt: |
   Act as a content writer and editor. Rewrite the text with the following
   instructions:
+  - Rephrase the express of this opinion as a question in order to be more open minded.
   - Use polite tone of voice.
   - Avoid hedging, be definite where possible.
   - Skip apologies.
@@ -14,5 +15,5 @@ prompt: |
   Text: {selection}
 
   Rewritten text:
-creativity: medium
+creativity: high
 icon: stars

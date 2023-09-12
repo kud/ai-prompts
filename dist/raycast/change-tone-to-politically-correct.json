@@ -1,7 +1,7 @@
 [
   {
     "title": "Change Tone to Politically Correct",
-    "prompt": "Act as a professional content writer and editor. Rewrite the text to ensure:\n- Politically correct tone of voice.\n- Formal language.\n- Accurate facts.\n- Correct spelling, grammar, and punctuation.\n- Concise phrasing.\n- Meaning unchanged.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:\n",
+    "prompt": "Act as a professional content writer and editor. Rewrite the text to ensure:\n- Politically correct tone of voice.\n- Formal language.\n- Accurate facts.\n- Correct spelling, grammar, and punctuation.\n- Concise phrasing.\n- Meaning unchanged.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:",
     "creativity": "medium",
     "icon": "stars"
   }

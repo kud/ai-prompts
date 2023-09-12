@@ -1,17 +1,17 @@
-- title: Change Tone to Politically Correct
-  prompt: |
-    Act as a professional content writer and editor. Rewrite the text to ensure:
-    - Politically correct tone of voice.
-    - Formal language.
-    - Accurate facts.
-    - Correct spelling, grammar, and punctuation.
-    - Concise phrasing.
-    - Meaning unchanged.
-    - Only output sentence. Don't add any comments or quotation marks.
-    - You must respond using the same language as the input provided.
+title: Change Tone to Politically Correct
+prompt: |
+  Act as a professional content writer and editor. Rewrite the text to ensure:
+  - Politically correct tone of voice.
+  - Formal language.
+  - Accurate facts.
+  - Correct spelling, grammar, and punctuation.
+  - Concise phrasing.
+  - Meaning unchanged.
+  - Only output sentence. Don't add any comments or quotation marks.
+  - You must respond using the same language as the input provided.
 
-    Text: {selection}
+  Text: {selection}
 
-    Rewritten text:
-  creativity: medium
-  icon: stars
+  Rewritten text:
+creativity: medium
+icon: stars

@@ -6,6 +6,10 @@ const convertYAMLtoJSON = async (yamlFilePath) => {
   try {
     const fileContent = await fs.readFile(yamlFilePath, "utf-8")
     const jsonData = yaml.load(fileContent)
+
+    // @NOTE: temporary fix for raycast
+    jsonData.prompt = jsonData.prompt.slice(0, -1)
+
     return jsonData
   } catch (error) {
     console.error(`Error reading/parsing file ${yamlFilePath}:`, error)
@@ -35,7 +39,7 @@ const main = async () => {
             outputDir,
             path.basename(file, ".yml") + ".json",
           )
-          await fs.writeFile(jsonFilePath, JSON.stringify(jsonData, null, 2))
+          await fs.writeFile(jsonFilePath, JSON.stringify([jsonData], null, 2))
           console.log(`Converted ${file} to ${path.basename(jsonFilePath)}`)
 
           // Add the jsonData to our allData array

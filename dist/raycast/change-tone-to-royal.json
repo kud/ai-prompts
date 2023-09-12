@@ -1,7 +1,7 @@
 [
   {
     "title": "Change Tone to Royal",
-    "prompt": "Act as a content writer and editor. Rewrite the text with the following\ninstructions:\n- Use a royal tone of voice.\n- Avoid hedging, be definite where possible.\n- Skip apologies.\n- Focus on main arguments.\n- Correct spelling, grammar, and punctuation.\n- Keep meaning unchanged.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:\n",
+    "prompt": "Act as a content writer and editor. Rewrite the text with the following\ninstructions:\n- Use a royal tone of voice.\n- Avoid hedging, be definite where possible.\n- Skip apologies.\n- Focus on main arguments.\n- Correct spelling, grammar, and punctuation.\n- Keep meaning unchanged.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:",
     "creativity": "medium",
     "icon": "stars"
   }
