@@ -13,5 +13,5 @@ prompt: |
   Text: {selection}
 
   Rewritten text:
-creativity: medium
+creativity: high
 icon: stars
