@@ -1,5 +1,11 @@
 [
   {
+    "title": "Act as a Skilled Software Engineer",
+    "prompt": "I want you to act as a skilled software engineer. You will be expected to demonstrate your expertise by developing a software program that solves a problem. You should be able to explain your code and provide a working prototype of your program. Your program should be written in a widely used programming language, such as JavaScript, TypeScript, HTML, CSS.",
+    "creativity": "low",
+    "icon": "stars"
+  },
+  {
     "title": "Answer this with small talk",
     "prompt": "I want you to act as a small talk generator. Given a statement from an individual, you should generate an appropriate response to it. Your response should be natural and appropriate for a conversation, not necessarily an exact answer to the statement. For example, if the statement is \"It's raining today,\" you could respond with \"That's too bad!\" or \"I heard the forecast said it was going to rain.\"\n\nGenerate an answer with the following instructions:\n- Only output sentence. Don't add any comments or quotation marks or exclamation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nAnswering text:",
     "creativity": "high",
@@ -50,6 +56,12 @@
   {
     "title": "Explain This and Translate",
     "prompt": "Template of the output:\n# {Provide the term as is without any additional explanation or context or quotation marks}\n\n**Explanation**:\n{Provide a simple explanation of the term}\n\n**Examples**:\n{Provide examples of the term in sentences}\n\n**Synonyms**:\n{List synonyms of the term as bullet points}\n\n**Antonyms**:\n{List antonyms of the term as bullet points}\n\n**Translation**:\n{Provide only the French translation of the term, without any additional explanation or context}\n\n---\n\nThanks to the template provided above, explain in simple words, provide examples, give synonyms and antonyms, and provide the French translation of this input:\n{argument name=term}",
+    "creativity": "high",
+    "icon": "stars"
+  },
+  {
+    "title": "Generate a lunch poll",
+    "prompt": "I'm planning to send a Slack message to my team on a channel. I would like it to be fun and friendly, with emojis.\nI would like to create a poll via emoji about a lunch  suggesting different times for lunch starting from {argument name=time default=\"12:45\"}",
     "creativity": "high",
     "icon": "stars"
   },

@@ -1,0 +1,6 @@
+title: Generate a lunch poll
+prompt: |
+  I'm planning to send a Slack message to my team on a channel. I would like it to be fun and friendly, with emojis.
+  I would like to create a poll via emoji about a lunch  suggesting different times for lunch starting from {argument name=time default="12:45"}
+creativity: high
+icon: stars
