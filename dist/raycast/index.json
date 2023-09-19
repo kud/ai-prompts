@@ -61,7 +61,7 @@
   },
   {
     "title": "Generate a lunch poll",
-    "prompt": "I'm planning to send a Slack message to my team on a channel. I would like it to be fun and friendly, with emojis.\nI would like to create a poll with emojis (not a clock, more about food) about a lunch  suggesting different times for lunch starting from {argument name=time default=\"12:45\"}",
+    "prompt": "I am planning to send a Slack message to my team in a channel. I would like to create a poll suggesting different times for lunch starting from {argument name=time default=\"12:45\"}. The options in emojis should be related to food. Do not use any clock emoji for this. The message should be fun and friendly, also using emojis.",
     "creativity": "high",
     "icon": "stars"
   },
