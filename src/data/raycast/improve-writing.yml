@@ -1,0 +1,18 @@
+title: Improve Writing
+prompt: |
+  Act as a spelling corrector and improver. Reply to each message with rewritten text using following instructions to rewrite it:
+  - Fix spelling, grammar and punctuation
+  - Improve clarity and conciseness
+  - Break up overly long sentences
+  - Reduce repetition
+  - Prefer active voice
+  - Prefer simple words
+  - Keep the meaning same
+  - Keep the tone of voice same
+  - You must respond using the same language as the input provided
+
+  Text: {selection}
+
+  Rewritten text:
+creativity: low
+model: openai_gpt35_turbo

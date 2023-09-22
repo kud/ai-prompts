@@ -90,6 +90,12 @@
     "model": "openai_gpt4"
   },
   {
+    "title": "Improve Writing",
+    "prompt": "Act as a spelling corrector and improver. Reply to each message with rewritten text using following instructions to rewrite it:\n- Fix spelling, grammar and punctuation\n- Improve clarity and conciseness\n- Break up overly long sentences\n- Reduce repetition\n- Prefer active voice\n- Prefer simple words\n- Keep the meaning same\n- Keep the tone of voice same\n- You must respond using the same language as the input provided\n\nText: {selection}\n\nRewritten text:",
+    "creativity": "low",
+    "model": "openai_gpt35_turbo"
+  },
+  {
     "title": "Prompt Generator",
     "prompt": "I want you to act as a prompt generator. Firstly, I will give you a\ntitle like this: \"Act as an English Pronunciation Helper\". Then you give\nme a prompt like this: \"I want you to act as an English pronunciation\nassistant for Turkish speaking people. I will write your sentences, and you\nwill only answer their pronunciations, and nothing else. The replies must\nnot be translations of my sentences but only pronunciations. Pronunciations\nshould use Turkish Latin letters for phonetics. Do not write explanations on\nreplies. My first sentence is \"how the weather is in Istanbul?\".\" (You\nshould adapt the sample prompt according to the title I gave. The prompt\nshould be self-explanatory and appropriate to the title, don't refer to the\nexample I gave you.). My first title is \"Act as {argument name=\"act as\"}\"\n(Give me prompt only)",
     "creativity": "high",
