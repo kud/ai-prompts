@@ -1,0 +1,9 @@
+[
+  {
+    "title": "Fix Spelling and Grammar",
+    "prompt": "Act as a spelling corrector and improver. Rewrite the text with corrected spelling, grammar and punctuation. You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:",
+    "creativity": "low",
+    "icon": "stars",
+    "model": "openai_gpt35_turbo"
+  }
+]
