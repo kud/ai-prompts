@@ -14,3 +14,4 @@ prompt: |
   (Give me prompt only)
 creativity: high
 icon: stars
+model: openai_gpt4

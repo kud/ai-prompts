@@ -16,3 +16,4 @@ prompt: |
   Rewritten text:
 creativity: medium
 icon: stars
+model: openai_gpt4

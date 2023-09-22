@@ -7,11 +7,15 @@
   "scripts": {
     "prebuild": "trash dist/",
     "build": "node src/index.js",
+    "dev": "nodemon --ext yml --exec npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "js-yaml": "4.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "3.0.1"
   }
 }

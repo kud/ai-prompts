@@ -24,3 +24,4 @@ prompt: |
   {argument name=term}
 creativity: high
 icon: stars
+model: openai_gpt4
