@@ -6,7 +6,7 @@
     "icon": "stars"
   },
   {
-    "title": "Answer this with small talk",
+    "title": "Answer this with Small Talk",
     "prompt": "I want you to act as a small talk generator. Given a statement from an individual, you should generate an appropriate response to it. Your response should be natural and appropriate for a conversation, not necessarily an exact answer to the statement. For example, if the statement is \"It's raining today,\" you could respond with \"That's too bad!\" or \"I heard the forecast said it was going to rain.\"\n\nGenerate an answer with the following instructions:\n- Only output sentence. Don't add any comments or quotation marks or exclamation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nAnswering text:",
     "creativity": "high",
     "icon": "stars"
@@ -18,7 +18,7 @@
     "icon": "stars"
   },
   {
-    "title": "Change Tone to I",
+    "title": "Change Tone to \"I\"",
     "prompt": "Given a text where the perspective is directed towards \"you\", rephrase the sentence to start with \"I\". Your response should transform the original sentiment into one that is more empathetic and indicative of personal feelings and perspective. This approach promotes constructive communication and avoids potential blame. Also only output sentence. Don't add any comments or quotation marks in the output.\n\nRewrite the text with the following instructions:\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nExample:\n  - Input: \"You never pay attention to what I'm saying.\"\n  - Output: \"I feel like my words aren't getting through to you.\"\n\nText: {selection}\n\nRewritten text:",
     "creativity": "high",
     "icon": "stars"
@@ -72,7 +72,7 @@
     "icon": "stars"
   },
   {
-    "title": "Generate a lunch poll",
+    "title": "Generate a Lunch Poll",
     "prompt": "I am planning to send a Slack message to my team in a channel. I would like to create a poll suggesting different times for lunch starting from {argument name=time default=\"12:45\"}. The options should be defined by one emoji related to food (always different for each option) and a time, like \"- 🍔 12:45\". The message should be fun and friendly, also using emojis. Use British English language for the output.",
     "creativity": "high",
     "icon": "stars"

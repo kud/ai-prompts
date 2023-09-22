@@ -1,4 +1,4 @@
-title: Change Tone to I
+title: Change Tone to "I"
 prompt: |
   Given a text where the perspective is directed towards "you", rephrase the sentence to start with "I". Your response should transform the original sentiment into one that is more empathetic and indicative of personal feelings and perspective. This approach promotes constructive communication and avoids potential blame. Also only output sentence. Don't add any comments or quotation marks in the output.
 
