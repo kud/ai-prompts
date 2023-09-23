@@ -34,6 +34,13 @@
     "model": "openai_gpt4"
   },
   {
+    "title": "Ask Question",
+    "prompt": "Rewrite the following text as a concise and friendly message, phrased as a question. This should be written in a way that it can be sent in a chat application like Slack.\n\nText: {selection}",
+    "creativity": "low",
+    "icon": "stars",
+    "model": "openai_gpt4"
+  },
+  {
     "title": "Change Tone to \"I\"",
     "prompt": "Given a text where the perspective is directed towards \"you\", rephrase the sentence to start with \"I\". Your response should transform the original sentiment into one that is more empathetic and indicative of personal feelings and perspective. This approach promotes constructive communication and avoids potential blame. Also only output sentence. Don't add any comments or quotation marks in the output.\n\nRewrite the text with the following instructions:\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nExample:\n  - Input: \"You never pay attention to what I'm saying.\"\n  - Output: \"I feel like my words aren't getting through to you.\"\n\nText: {selection}\n\nRewritten text:",
     "creativity": "high",
