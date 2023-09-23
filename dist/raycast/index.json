@@ -21,7 +21,7 @@
   },
   {
     "title": "Answer this with Neutral",
-    "prompt": "Act as a content writer and editor. Generate a politically correct response to answer neutrally and non-committally to a comment or opinion without taking a stance on the topic with the following instructions:\n- Use polite tone of voice.\n- Skip apologies.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:",
+    "prompt": "Act as a content writer and editor. Generate a politically correct response to answer neutrally and non-committally to a comment or opinion without taking a stance on the topic with the following instructions:\n- Use polite tone of voice.\n- Skip apologies.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText to answer: {selection}\n\nAnswer:",
     "creativity": "high",
     "icon": "stars",
     "model": "openai_gpt4"
