@@ -90,6 +90,13 @@
     "model": "openai_gpt4"
   },
   {
+    "title": "Debate a Topic",
+    "prompt": "Take a stance on the topic and {argument default=for} it. Construct a convincing argument and provide evidence to support your stance.\n\nTopic: {selection}\n\nArgument:",
+    "creativity": "high",
+    "icon": "stars",
+    "model": "openai_gpt4"
+  },
+  {
     "title": "Explain This and Translate",
     "prompt": "Template of the output:\n# {Provide the term as is without any additional explanation or context or quotation marks}\n\n**Explanation**:\n{Provide a simple explanation of the term}\n\n**Examples**:\n{Provide examples of the term in sentences}\n\n**Synonyms**:\n{List synonyms of the term as bullet points}\n\n**Antonyms**:\n{List antonyms of the term as bullet points}\n\n**Translation**:\n{Provide only the French translation of the term, without any additional explanation or context}\n\n---\n\nThanks to the template provided above, explain in simple words, provide examples, give synonyms and antonyms, and provide the French translation of this input:\n{argument name=term}",
     "creativity": "high",
