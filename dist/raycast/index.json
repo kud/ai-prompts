@@ -70,7 +70,7 @@
   },
   {
     "title": "Change Tone to Posh",
-    "prompt": "Act as a content writer and editor. Rewrite the text with the following\ninstructions:\n- Use a posh tone of voice.\n- Avoid hedging, be definite where possible.\n- Skip apologies.\n- Focus on main arguments.\n- Correct spelling, grammar, and punctuation.\n- Keep meaning unchanged.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:",
+    "prompt": "Act as a content writer and editor. Rewrite the text with the following\ninstructions:\n- Use a posh and sophisticated tone of voice.\n- Avoid hedging, be definite where possible.\n- Skip apologies.\n- Focus on main arguments.\n- Correct spelling, grammar, and punctuation.\n- Keep meaning unchanged.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:",
     "creativity": "high",
     "icon": "stars",
     "model": "openai_gpt4"
@@ -85,6 +85,20 @@
   {
     "title": "Change Tone to Royal",
     "prompt": "Act as a content writer and editor. Rewrite the text with the following\ninstructions:\n- Use a royal tone of voice.\n- Avoid hedging, be definite where possible.\n- Skip apologies.\n- Focus on main arguments.\n- Correct spelling, grammar, and punctuation.\n- Keep meaning unchanged.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:",
+    "creativity": "medium",
+    "icon": "stars",
+    "model": "openai_gpt4"
+  },
+  {
+    "title": "Change Tone to Slang",
+    "prompt": "Act as a content writer and editor. Rewrite the text with the following\ninstructions:\n- Use slang tone of voice.\n- Correct spelling, grammar, and punctuation.\n- Keep meaning unchanged.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:",
+    "creativity": "medium",
+    "icon": "stars",
+    "model": "openai_gpt4"
+  },
+  {
+    "title": "Change Tone to Vulgar",
+    "prompt": "Act as a content writer and editor. Rewrite the text with the following\ninstructions:\n- Use vulgar tone of voice.\n- Correct spelling, grammar, and punctuation.\n- Keep meaning unchanged.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:",
     "creativity": "medium",
     "icon": "stars",
     "model": "openai_gpt4"
@@ -105,7 +119,7 @@
   },
   {
     "title": "Fix Spelling and Grammar",
-    "prompt": "Act as a spelling corrector and improver. Rewrite the text with corrected spelling, grammar and punctuation. You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:",
+    "prompt": "Act as a spelling corrector and improver. Rewrite the text with corrected spelling, grammar and punctuation. Don't add any comments or quotation marks. You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:",
     "creativity": "low",
     "icon": "stars",
     "model": "openai_gpt35_turbo"

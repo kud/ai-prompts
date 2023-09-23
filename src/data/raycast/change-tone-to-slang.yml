@@ -1,11 +1,8 @@
-title: Change Tone to Posh
+title: Change Tone to Slang
 prompt: |
   Act as a content writer and editor. Rewrite the text with the following
   instructions:
-  - Use a posh and sophisticated tone of voice.
-  - Avoid hedging, be definite where possible.
-  - Skip apologies.
-  - Focus on main arguments.
+  - Use slang tone of voice.
   - Correct spelling, grammar, and punctuation.
   - Keep meaning unchanged.
   - Only output sentence. Don't add any comments or quotation marks.
@@ -14,6 +11,6 @@ prompt: |
   Text: {selection}
 
   Rewritten text:
-creativity: high
+creativity: medium
 icon: stars
 model: openai_gpt4

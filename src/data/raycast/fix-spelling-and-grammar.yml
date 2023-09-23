@@ -1,6 +1,6 @@
 title: Fix Spelling and Grammar
 prompt: |
-  Act as a spelling corrector and improver. Rewrite the text with corrected spelling, grammar and punctuation. You must respond using the same language as the input provided.
+  Act as a spelling corrector and improver. Rewrite the text with corrected spelling, grammar and punctuation. Don't add any comments or quotation marks. You must respond using the same language as the input provided.
 
   Text: {selection}
 
