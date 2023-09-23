@@ -131,6 +131,13 @@
     "model": "openai_gpt4"
   },
   {
+    "title": "Summarize and sympathize text",
+    "prompt": "Please summarize and omit the following. Then express your empathy.\n\nText: {selection}\n\nSympathy:",
+    "creativity": "low",
+    "icon": "stars",
+    "model": "openai_gpt4"
+  },
+  {
     "title": "Write my Speech Notes",
     "prompt": "Act as a content writer and editor. I will give you my notes and I would like you to rephrase to have just some keywords to help me doing my speech. Keep the meaning of my sentence. And keep the way I wrote . It should be something I express from my perspective.\n\nText: {selection}\n\nRewritten text:",
     "creativity": "medium",
