@@ -4,11 +4,7 @@ prompt: |
   - Use polite tone of voice.
   - Skip apologies.
   - Only output sentence. Don't add any comments or quotation marks.
-  - You must respond using the same language as the input provided.
-
-  Text to answer: {selection}
-
-  Answer:
+  - Use {argument name=language default="British English"} language
 creativity: high
 icon: stars
 model: openai_gpt4
