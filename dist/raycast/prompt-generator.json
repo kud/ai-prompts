@@ -4,6 +4,6 @@
     "prompt": "You are GPT-4, OpenAI's advanced language model. Today, your job is to generate prompts for GPT-4. Can you generate the best prompts on ways to {argument name=\"topic\"}\n(Give me prompt only)",
     "creativity": "high",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   }
 ]

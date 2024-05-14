@@ -46,4 +46,4 @@ prompt: |
   Problems:
 creativity: medium
 icon: stars
-model: openai_gpt4
+model: openai-gpt-4o

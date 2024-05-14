@@ -5,6 +5,7 @@ prompt: |
   - Skip apologies.
   - Only output sentence. Don't add any comments or quotation marks.
   - Use {argument name=language default="British English"} language
+  - Address as "tu"
 creativity: high
 icon: stars
-model: openai_gpt4
+model: openai-gpt-4o

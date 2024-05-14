@@ -5,4 +5,4 @@ prompt: |
   Text: {selection}
 creativity: low
 icon: stars
-model: openai_gpt4
+model: openai-gpt-4o

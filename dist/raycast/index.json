@@ -4,186 +4,186 @@
     "prompt": "I want you to act as a debater. I will provide you with some topics related to current events and your task is to research both sides of the debates, present valid arguments for each side, refute opposing points of view, and draw persuasive conclusions based on evidence. Your goal is to help people come away from the discussion with increased knowledge and insight into the topic at hand. My first request is \"{argument name=topic}\"",
     "creativity": "medium",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Act as a Judge",
     "prompt": "I will present to you extracts from texts, speeches, or statements that I find interesting or controversial. Your role is to evaluate the content of the comments, analyze them, and express a judgment based on your understanding of their context, the tone used, the potential implications, and any other relevant factors. You must respond using the same language as the input provided (it could be English, French, etc.). Here is the excerpt: {selection}",
     "creativity": "medium",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Act as a Skilled Software Engineer",
     "prompt": "I want you to act as a skilled software engineer. I will explain to you what I want to do, and you'll explain your code to me and try to optimise it. Your program should be written in a widely used programming language, such as {argument name=languages default=\"JavaScript\"}.",
     "creativity": "low",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Answer this with Neutral",
-    "prompt": "Act as a content writer and editor. Generate a politically correct response to answer neutrally and non-committally to a comment or opinion without taking a stance on the topic with the following instructions:\n- Use polite tone of voice.\n- Skip apologies.\n- Only output sentence. Don't add any comments or quotation marks.\n- Use {argument name=language default=\"British English\"} language",
+    "prompt": "Act as a content writer and editor. Generate a politically correct response to answer neutrally and non-committally to a comment or opinion without taking a stance on the topic with the following instructions:\n- Use polite tone of voice.\n- Skip apologies.\n- Only output sentence. Don't add any comments or quotation marks.\n- Use {argument name=language default=\"British English\"} language\n- Address as \"tu\"",
     "creativity": "high",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Answer this with Small Talk",
     "prompt": "I want you to act as a small talk generator. Given a statement from an individual, you should generate an appropriate response to it. Your response should be natural and appropriate for a conversation, not necessarily an exact answer to the statement. For example, if the statement is \"It's raining today,\" you could respond with \"That's too bad!\" or \"I heard the forecast said it was going to rain.\"\n\nGenerate an answer with the following instructions:\n- Only output sentence. Don't add any comments or quotation marks or exclamation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nAnswering text:",
     "creativity": "high",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Ask for Reviews",
     "prompt": "I would like to send a message to my team on Slack, expressing my desire to have a code review for my pull request. The message should be professional, formal, kind, positive, slightly sophisticated, and concise, with just a few emojis.",
     "creativity": "high",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Ask Question",
     "prompt": "Rewrite the following text as a concise and friendly message, phrased as a question. This should be written in a way that it can be sent in a chat application like Slack.\n\nText: {selection}",
     "creativity": "low",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Change Tone to \"I\"",
     "prompt": "Given a text where the perspective is directed towards \"you\", rephrase the sentence to start with \"I\". Your response should transform the original sentiment into one that is more empathetic and indicative of personal feelings and perspective. This approach promotes constructive communication and avoids potential blame. Also only output sentence. Don't add any comments or quotation marks in the output.\n\nRewrite the text with the following instructions:\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nExample:\n  - Input: \"You never pay attention to what I'm saying.\"\n  - Output: \"I feel like my words aren't getting through to you.\"\n\nText: {selection}\n\nRewritten text:",
     "creativity": "high",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Change Tone to Optimistic",
     "prompt": "Act as a content writer and editor. Rewrite the text with the following\ninstructions:\n- Use optimistic tone of voice.\n- Skip apologies.\n- Focus on main arguments.\n- Correct spelling, grammar, and punctuation.\n- Keep meaning unchanged.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:",
     "creativity": "high",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Change Tone to Polite",
     "prompt": "Act as a content writer and editor. Rewrite the text with the following\ninstructions:\n- Use polite tone of voice.\n- Avoid hedging, be definite where possible.\n- Skip apologies.\n- Focus on main arguments.\n- Correct spelling, grammar, and punctuation.\n- Keep meaning unchanged.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:",
     "creativity": "medium",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Change Tone to Politically Correct",
     "prompt": "Act as a professional content writer and editor. Rewrite the text to ensure:\n- Politically correct tone of voice.\n- Formal language.\n- Accurate facts.\n- Correct spelling, grammar, and punctuation.\n- Concise phrasing.\n- Meaning unchanged.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:",
     "creativity": "high",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Change Tone to Posh",
     "prompt": "Act as a content writer and editor. Rewrite the text with the following\ninstructions:\n- Use a posh and sophisticated tone of voice.\n- Avoid hedging, be definite where possible.\n- Skip apologies.\n- Focus on main arguments.\n- Correct spelling, grammar, and punctuation.\n- Keep meaning unchanged.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:",
     "creativity": "high",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Change Tone to Question",
     "prompt": "Act as a content writer and editor. Rewrite the text with the following\ninstructions:\n- Rephrase the express of this opinion as a question in order to be more open minded.\n- Use polite tone of voice.\n- Avoid hedging, be definite where possible.\n- Skip apologies.\n- Focus on main arguments.\n- Correct spelling, grammar, and punctuation.\n- Keep meaning unchanged.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:",
     "creativity": "high",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Change Tone to Royal",
     "prompt": "Act as a content writer and editor. Rewrite the text with the following\ninstructions:\n- Use a royal tone of voice.\n- Avoid hedging, be definite where possible.\n- Skip apologies.\n- Focus on main arguments.\n- Correct spelling, grammar, and punctuation.\n- Keep meaning unchanged.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:",
     "creativity": "medium",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Change Tone to Slang",
     "prompt": "Act as a content writer and editor. Rewrite the text with the following\ninstructions:\n- Use slang tone of voice.\n- Correct spelling, grammar, and punctuation.\n- Keep meaning unchanged.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:",
     "creativity": "medium",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Change Tone to Vulgar",
     "prompt": "Act as a content writer and editor. Rewrite the text with the following\ninstructions:\n- Use vulgar tone of voice.\n- Correct spelling, grammar, and punctuation.\n- Keep meaning unchanged.\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:",
     "creativity": "medium",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Debate a Topic",
     "prompt": "Take a stance on the topic and {argument default=for} it. Construct a convincing argument and provide evidence to support your stance.\n\nTopic: {selection}\n\nArgument:",
     "creativity": "high",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Explain This and Translate",
     "prompt": "Template of the output:\n# {Provide the term as is without any additional explanation or context or quotation marks}\n\n**Explanation**:\n{Provide a simple explanation of the term}\n\n**Examples**:\n{Provide examples of the term in sentences}\n\n**Synonyms**:\n{List synonyms of the term as bullet points}\n\n**Antonyms**:\n{List antonyms of the term as bullet points}\n\n**Translation**:\n{Provide only the French translation of the term, without any additional explanation or context}\n\n---\n\nThanks to the template provided above, explain in simple words, provide examples, give synonyms and antonyms, and provide the French translation of this input:\n{argument name=term}",
     "creativity": "high",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Find Bugs in Code",
     "prompt": "Act as a software engineer with deep understanding of any programming language. Review the code to fix logical bugs in the code. Only consider the provided context, answer concisely and add a codeblock with the proposed code changes. If you can't confidently find bugs, answer with \"LGTM 👍\".\n\nCode:\n```\nfunction PrevAction() {\n  const [page, setPage] = useGlobalState(\"page\");\n  return (\n    <Action\n      title=\"Go to Previous Page\"\n      onAction={() => setPage(page - 1)}\n    />\n  );\n}\n```\n\nReview:\nThe code is missing a check to make sure 'page' is greater than 0 before subtracting 1. Otherwise, the page could be set to -1 which might cause unexpected behavior.\n```\nfunction PrevAction() {\n  const [page, setPage] = useGlobalState(\"page\");\n  return (\n    <Action\n      title=\"Go to Previous Page\"\n      onAction={() => setPage(Math.max(page - 1, 0))}\n    />\n  );\n}\n```\n\nCode:\n```\nprivate func submit(_ text: String) {\n  guard !text.isEmpty else { return }\n  let prompt = OpenAIPrompt(prompt: text, imitateChatGPT: true)\n  submit(prompt)\n}\n```\n\nProblems:\nNothing found - LGTM 👌\n\nCode: {selection}\n\nProblems:",
     "creativity": "medium",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Fix Spelling and Grammar",
     "prompt": "Act as a spelling corrector and improver. Rewrite the text with corrected spelling, grammar and punctuation. Don't add any comments or quotation marks. You must respond using the same language as the input provided.\n\nText: {selection}\n\nRewritten text:",
     "creativity": "low",
     "icon": "stars",
-    "model": "openai_gpt35_turbo"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Generate a Lunch Poll",
     "prompt": "I am planning to send a Slack message to my team in a channel. I would like to create a poll suggesting different times for lunch starting from {argument name=time default=\"12:45\"}. The options should be defined by one emoji related to food (always different for each option) and a time, like \"- 🍔 12:45\". The message should be fun and friendly, also using emojis. Use British English language for the output.",
     "creativity": "high",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Improve Writing",
     "prompt": "Act as a spelling corrector and improver. Reply to each message with rewritten text using following instructions to rewrite it:\n- Fix spelling, grammar and punctuation\n- Improve clarity and conciseness\n- Break up overly long sentences\n- Reduce repetition\n- Prefer active voice\n- Prefer simple words\n- Keep the meaning same\n- Keep the tone of voice same\n- You must respond using the same language as the input provided\n\nText: {selection}\n\nRewritten text:",
     "creativity": "low",
-    "model": "openai_gpt35_turbo"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Prompt Generator",
     "prompt": "You are GPT-4, OpenAI's advanced language model. Today, your job is to generate prompts for GPT-4. Can you generate the best prompts on ways to {argument name=\"topic\"}\n(Give me prompt only)",
     "creativity": "high",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Summarize and sympathize text",
     "prompt": "Please summarize and omit the following. Then express your empathy.\n\nText: {selection}\n\nSympathy:",
     "creativity": "low",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "TL;DR",
     "prompt": "Extract all facts from the text and summarize it in all relevant aspects in up to seven bullet points and a 1-liner summary. Pick a good matching emoji for every bullet point.\n\nText: {selection}\n\nSummary:",
     "creativity": "medium",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Write 10 Alternatives",
     "prompt": "Give me 10 alternative versions of the text. Ensure that the alternatives are all distinct from one another.\n\nText: {selection}\n\nAlternatives:",
     "creativity": "high",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   },
   {
     "title": "Write my Speech Notes",
     "prompt": "Act as a content writer and editor. I will give you my notes and I would like you to rephrase to have just some keywords to help me doing my speech. Keep the meaning of my sentence. And keep the way I wrote . It should be something I express from my perspective.\n\nText: {selection}\n\nRewritten text:",
     "creativity": "medium",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   }
 ]

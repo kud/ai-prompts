@@ -7,4 +7,4 @@ prompt: |
   Rewritten text:
 creativity: low
 icon: stars
-model: openai_gpt35_turbo
+model: openai-gpt-4o

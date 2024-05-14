@@ -4,6 +4,6 @@
     "prompt": "Extract all facts from the text and summarize it in all relevant aspects in up to seven bullet points and a 1-liner summary. Pick a good matching emoji for every bullet point.\n\nText: {selection}\n\nSummary:",
     "creativity": "medium",
     "icon": "stars",
-    "model": "openai_gpt4"
+    "model": "openai-gpt-4o"
   }
 ]
