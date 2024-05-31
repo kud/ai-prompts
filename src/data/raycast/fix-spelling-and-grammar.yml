@@ -7,4 +7,5 @@ prompt: |
   Rewritten text:
 creativity: low
 icon: stars
+highlightEdits: true
 model: openai-gpt-4o
