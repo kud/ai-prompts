@@ -53,6 +53,7 @@ const main = async () => {
       path.join(outputDir, "index.json"),
       JSON.stringify(allData, null, 2),
     )
+    console.log("")
     console.log("All data written to index.json")
   } catch (error) {
     console.error("Error in main function:", error)

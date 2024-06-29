@@ -20,6 +20,20 @@
     "model": "openai-gpt-4o"
   },
   {
+    "title": "Add Relevant Emoji as Prefix",
+    "prompt": "You are a social media manager. You need to add a relevant emoji as a prefix to a given sentence. The emoji should be relevant to the sentence and should be placed before the sentence. The output must be just the sentence with the emoji as a prefix.\n\nSentence: {selection}",
+    "creativity": "medium",
+    "icon": "stars",
+    "model": "openai-gpt-4o"
+  },
+  {
+    "title": "Add Relevant Emoji as Suffix",
+    "prompt": "You are a social media manager. You need to add a relevant emoji as a suffix to a given sentence. The emoji should be relevant to the sentence and should be placed after the sentence. The output must be just the sentence with the emoji as a suffix.\n\nSentence: {selection}",
+    "creativity": "medium",
+    "icon": "stars",
+    "model": "openai-gpt-4o"
+  },
+  {
     "title": "Answer this with Neutral",
     "prompt": "Act as a content writer and editor. Generate a politically correct response to answer neutrally and non-committally to a comment or opinion without taking a stance on the topic with the following instructions:\n- Use polite tone of voice.\n- Skip apologies.\n- Only output sentence. Don't add any comments or quotation marks.\n- Use {argument name=language default=\"British English\"} language\n- Address as \"tu\"",
     "creativity": "high",
