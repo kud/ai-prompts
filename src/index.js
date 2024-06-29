@@ -1,6 +1,7 @@
 import fs from "fs/promises"
 import path from "path"
 import yaml from "js-yaml"
+import { titleCase } from "title-case"
 
 const convertYAMLtoJSON = async (yamlFilePath) => {
   try {
@@ -19,15 +20,16 @@ const convertYAMLtoJSON = async (yamlFilePath) => {
 const main = async () => {
   try {
     const sourceDir = path.resolve("src/data")
-    const outputDir = path.resolve("dist/raycast")
+    const outputRaycastDir = path.resolve("dist/raycast")
+    const outputEspansoDir = path.resolve("dist/espanso")
 
-    // Ensure the output directory exists
-    await fs.mkdir(outputDir, { recursive: true })
+    await fs.mkdir(outputRaycastDir, { recursive: true })
+    await fs.mkdir(outputEspansoDir, { recursive: true })
 
     const files = await fs.readdir(sourceDir)
 
-    // This array will store all the jsonData to be written to index.json
     const allData = []
+    const espansoMatches = []
 
     for (const file of files) {
       if (path.extname(file) === ".yml") {
@@ -36,25 +38,47 @@ const main = async () => {
 
         if (jsonData) {
           const jsonFilePath = path.join(
-            outputDir,
+            outputRaycastDir,
             path.basename(file, ".yml") + ".json",
           )
           await fs.writeFile(jsonFilePath, JSON.stringify([jsonData], null, 2))
           console.log(`Converted ${file} to ${path.basename(jsonFilePath)}`)
 
-          // Add the jsonData to our allData array
           allData.push(jsonData)
+
+          const fileNameWithoutExt = path.basename(file, ".yml")
+          const content = jsonData.prompt
+
+          espansoMatches.push({
+            trigger: `??ai.${fileNameWithoutExt}`,
+            label: titleCase(fileNameWithoutExt.replace(/-/g, " ")),
+            replace: content,
+          })
         }
       }
     }
 
-    // After converting all files, write the allData to index.json
     await fs.writeFile(
-      path.join(outputDir, "index.json"),
+      path.join(outputRaycastDir, "index.json"),
       JSON.stringify(allData, null, 2),
     )
-    console.log("")
-    console.log("All data written to index.json")
+    console.log("\nAll data written to index.json")
+
+    const espansoYAMLContent = yaml.dump(
+      { matches: espansoMatches },
+      {
+        lineWidth: -1,
+        styles: {
+          replace: "literal",
+        },
+      },
+    )
+
+    await fs.writeFile(
+      path.join(outputEspansoDir, "index.yml"),
+      espansoYAMLContent,
+    )
+    console.log("All Espanso matches written to index.yml")
   } catch (error) {
     console.error("Error in main function:", error)
   }

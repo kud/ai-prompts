@@ -1,0 +1,347 @@
+matches:
+  - trigger: '??ai.act-as-a-debater'
+    label: Act as a Debater
+    replace: I want you to act as a debater. I will provide you with some topics related to current events and your task is to research both sides of the debates, present valid arguments for each side, refute opposing points of view, and draw persuasive conclusions based on evidence. Your goal is to help people come away from the discussion with increased knowledge and insight into the topic at hand. My first request is "{argument name=topic}"
+  - trigger: '??ai.act-as-a-judge'
+    label: Act as a Judge
+    replace: 'I will present to you extracts from texts, speeches, or statements that I find interesting or controversial. Your role is to evaluate the content of the comments, analyze them, and express a judgment based on your understanding of their context, the tone used, the potential implications, and any other relevant factors. You must respond using the same language as the input provided (it could be English, French, etc.). Here is the excerpt: {selection}'
+  - trigger: '??ai.act-as-a-skilled-software-engineer'
+    label: Act as a Skilled Software Engineer
+    replace: I want you to act as a skilled software engineer. I will explain to you what I want to do, and you'll explain your code to me and try to optimise it. Your program should be written in a widely used programming language, such as {argument name=languages default="JavaScript"}.
+  - trigger: '??ai.add-relevant-emoji-prefix'
+    label: Add Relevant Emoji Prefix
+    replace: |-
+      You are a social media manager. You need to add a relevant emoji as a prefix to a given sentence. The emoji should be relevant to the sentence and should be placed before the sentence. The output must be just the sentence with the emoji as a prefix.
+
+      Sentence: {selection}
+  - trigger: '??ai.add-relevant-emoji-suffix'
+    label: Add Relevant Emoji Suffix
+    replace: |-
+      You are a social media manager. You need to add a relevant emoji as a suffix to a given sentence. The emoji should be relevant to the sentence and should be placed after the sentence. The output must be just the sentence with the emoji as a suffix.
+
+      Sentence: {selection}
+  - trigger: '??ai.answer-with-neutral'
+    label: Answer with Neutral
+    replace: |-
+      Act as a content writer and editor. Generate a politically correct response to answer neutrally and non-committally to a comment or opinion without taking a stance on the topic with the following instructions:
+      - Use polite tone of voice.
+      - Skip apologies.
+      - Only output sentence. Don't add any comments or quotation marks.
+      - Use {argument name=language default="British English"} language
+      - Address as "tu"
+  - trigger: '??ai.anwser-with-small-talk'
+    label: Anwser with Small Talk
+    replace: |-
+      I want you to act as a small talk generator. Given a statement from an individual, you should generate an appropriate response to it. Your response should be natural and appropriate for a conversation, not necessarily an exact answer to the statement. For example, if the statement is "It's raining today," you could respond with "That's too bad!" or "I heard the forecast said it was going to rain."
+
+      Generate an answer with the following instructions:
+      - Only output sentence. Don't add any comments or quotation marks or exclamation marks.
+      - You must respond using the same language as the input provided.
+
+      Text: {selection}
+
+      Answering text:
+  - trigger: '??ai.ask-for-reviews'
+    label: Ask for Reviews
+    replace: I would like to send a message to my team on Slack, expressing my desire to have a code review for my pull request. The message should be professional, formal, kind, positive, slightly sophisticated, and concise, with just a few emojis.
+  - trigger: '??ai.ask-question'
+    label: Ask Question
+    replace: |-
+      Rewrite the following text as a concise and friendly message, phrased as a question. This should be written in a way that it can be sent in a chat application like Slack.
+
+      Text: {selection}
+  - trigger: '??ai.change-tone-to-i'
+    label: Change Tone to I
+    replace: |-
+      Given a text where the perspective is directed towards "you", rephrase the sentence to start with "I". Your response should transform the original sentiment into one that is more empathetic and indicative of personal feelings and perspective. This approach promotes constructive communication and avoids potential blame. Also only output sentence. Don't add any comments or quotation marks in the output.
+
+      Rewrite the text with the following instructions:
+      - Only output sentence. Don't add any comments or quotation marks.
+      - You must respond using the same language as the input provided.
+
+      Example:
+        - Input: "You never pay attention to what I'm saying."
+        - Output: "I feel like my words aren't getting through to you."
+
+      Text: {selection}
+
+      Rewritten text:
+  - trigger: '??ai.change-tone-to-optimistic'
+    label: Change Tone to Optimistic
+    replace: |-
+      Act as a content writer and editor. Rewrite the text with the following
+      instructions:
+      - Use optimistic tone of voice.
+      - Skip apologies.
+      - Focus on main arguments.
+      - Correct spelling, grammar, and punctuation.
+      - Keep meaning unchanged.
+      - Only output sentence. Don't add any comments or quotation marks.
+      - You must respond using the same language as the input provided.
+
+      Text: {selection}
+
+      Rewritten text:
+  - trigger: '??ai.change-tone-to-polite'
+    label: Change Tone to Polite
+    replace: |-
+      Act as a content writer and editor. Rewrite the text with the following
+      instructions:
+      - Use polite tone of voice.
+      - Avoid hedging, be definite where possible.
+      - Skip apologies.
+      - Focus on main arguments.
+      - Correct spelling, grammar, and punctuation.
+      - Keep meaning unchanged.
+      - Only output sentence. Don't add any comments or quotation marks.
+      - You must respond using the same language as the input provided.
+
+      Text: {selection}
+
+      Rewritten text:
+  - trigger: '??ai.change-tone-to-politically-correct'
+    label: Change Tone to Politically Correct
+    replace: |-
+      Act as a professional content writer and editor. Rewrite the text to ensure:
+      - Politically correct tone of voice.
+      - Formal language.
+      - Accurate facts.
+      - Correct spelling, grammar, and punctuation.
+      - Concise phrasing.
+      - Meaning unchanged.
+      - Only output sentence. Don't add any comments or quotation marks.
+      - You must respond using the same language as the input provided.
+
+      Text: {selection}
+
+      Rewritten text:
+  - trigger: '??ai.change-tone-to-posh'
+    label: Change Tone to Posh
+    replace: |-
+      Act as a content writer and editor. Rewrite the text with the following
+      instructions:
+      - Use a posh and sophisticated tone of voice.
+      - Avoid hedging, be definite where possible.
+      - Skip apologies.
+      - Focus on main arguments.
+      - Correct spelling, grammar, and punctuation.
+      - Keep meaning unchanged.
+      - Only output sentence. Don't add any comments or quotation marks.
+      - You must respond using the same language as the input provided.
+
+      Text: {selection}
+
+      Rewritten text:
+  - trigger: '??ai.change-tone-to-question'
+    label: Change Tone to Question
+    replace: |-
+      Act as a content writer and editor. Rewrite the text with the following
+      instructions:
+      - Rephrase the express of this opinion as a question in order to be more open minded.
+      - Use polite tone of voice.
+      - Avoid hedging, be definite where possible.
+      - Skip apologies.
+      - Focus on main arguments.
+      - Correct spelling, grammar, and punctuation.
+      - Keep meaning unchanged.
+      - Only output sentence. Don't add any comments or quotation marks.
+      - You must respond using the same language as the input provided.
+
+      Text: {selection}
+
+      Rewritten text:
+  - trigger: '??ai.change-tone-to-royal'
+    label: Change Tone to Royal
+    replace: |-
+      Act as a content writer and editor. Rewrite the text with the following
+      instructions:
+      - Use a royal tone of voice.
+      - Avoid hedging, be definite where possible.
+      - Skip apologies.
+      - Focus on main arguments.
+      - Correct spelling, grammar, and punctuation.
+      - Keep meaning unchanged.
+      - Only output sentence. Don't add any comments or quotation marks.
+      - You must respond using the same language as the input provided.
+
+      Text: {selection}
+
+      Rewritten text:
+  - trigger: '??ai.change-tone-to-slang'
+    label: Change Tone to Slang
+    replace: |-
+      Act as a content writer and editor. Rewrite the text with the following
+      instructions:
+      - Use slang tone of voice.
+      - Correct spelling, grammar, and punctuation.
+      - Keep meaning unchanged.
+      - Only output sentence. Don't add any comments or quotation marks.
+      - You must respond using the same language as the input provided.
+
+      Text: {selection}
+
+      Rewritten text:
+  - trigger: '??ai.change-tone-to-vulgar'
+    label: Change Tone to Vulgar
+    replace: |-
+      Act as a content writer and editor. Rewrite the text with the following
+      instructions:
+      - Use vulgar tone of voice.
+      - Correct spelling, grammar, and punctuation.
+      - Keep meaning unchanged.
+      - Only output sentence. Don't add any comments or quotation marks.
+      - You must respond using the same language as the input provided.
+
+      Text: {selection}
+
+      Rewritten text:
+  - trigger: '??ai.debate-topic'
+    label: Debate Topic
+    replace: |-
+      Take a stance on the topic and {argument default=for} it. Construct a convincing argument and provide evidence to support your stance.
+
+      Topic: {selection}
+
+      Argument:
+  - trigger: '??ai.explain-this-in-english-and-translate-it'
+    label: Explain This in English and Translate It
+    replace: |-
+      Template of the output:
+      # {Provide the term as is without any additional explanation or context or quotation marks}
+
+      **Explanation**:
+      {Provide a simple explanation of the term}
+
+      **Examples**:
+      {Provide examples of the term in sentences}
+
+      **Synonyms**:
+      {List synonyms of the term as bullet points}
+
+      **Antonyms**:
+      {List antonyms of the term as bullet points}
+
+      **Translation**:
+      {Provide only the French translation of the term, without any additional explanation or context}
+
+      ---
+
+      Thanks to the template provided above, explain in simple words, provide examples, give synonyms and antonyms, and provide the French translation of this input:
+      {argument name=term}
+  - trigger: '??ai.find-bugs-in-code'
+    label: Find Bugs in Code
+    replace: |-
+      Act as a software engineer with deep understanding of any programming language. Review the code to fix logical bugs in the code. Only consider the provided context, answer concisely and add a codeblock with the proposed code changes. If you can't confidently find bugs, answer with "LGTM 👍".
+
+      Code:
+      ```
+      function PrevAction() {
+        const [page, setPage] = useGlobalState("page");
+        return (
+          <Action
+            title="Go to Previous Page"
+            onAction={() => setPage(page - 1)}
+          />
+        );
+      }
+      ```
+
+      Review:
+      The code is missing a check to make sure 'page' is greater than 0 before subtracting 1. Otherwise, the page could be set to -1 which might cause unexpected behavior.
+      ```
+      function PrevAction() {
+        const [page, setPage] = useGlobalState("page");
+        return (
+          <Action
+            title="Go to Previous Page"
+            onAction={() => setPage(Math.max(page - 1, 0))}
+          />
+        );
+      }
+      ```
+
+      Code:
+      ```
+      private func submit(_ text: String) {
+        guard !text.isEmpty else { return }
+        let prompt = OpenAIPrompt(prompt: text, imitateChatGPT: true)
+        submit(prompt)
+      }
+      ```
+
+      Problems:
+      Nothing found - LGTM 👌
+
+      Code: {selection}
+
+      Problems:
+  - trigger: '??ai.fix-spelling-and-grammar'
+    label: Fix Spelling and Grammar
+    replace: |-
+      Act as a spelling corrector and improver. Rewrite the text with corrected spelling, grammar and punctuation. Don't add any comments or quotation marks. You must respond using the same language as the input provided.
+
+      Text: {selection}
+
+      Rewritten text:
+  - trigger: '??ai.generate-ical'
+    label: Generate Ical
+    replace: |-
+      Create an iCalendar file in a code block based on the description provided, and also suggest a filename (with .ics extension) in another code block. This is the description:
+      {selection}
+  - trigger: '??ai.generate-lunch-poll'
+    label: Generate Lunch Poll
+    replace: I am planning to send a Slack message to my team in a channel. I would like to create a poll suggesting different times for lunch starting from {argument name=time default="12:45"}. The options should be defined by one emoji related to food (always different for each option) and a time, like "- 🍔 12:45". The message should be fun and friendly, also using emojis. Use British English language for the output.
+  - trigger: '??ai.improve-writing'
+    label: Improve Writing
+    replace: |-
+      Act as a spelling corrector and improver. Reply to each message with rewritten text using following instructions to rewrite it:
+      - Fix spelling, grammar and punctuation
+      - Improve clarity and conciseness
+      - Break up overly long sentences
+      - Reduce repetition
+      - Prefer active voice
+      - Prefer simple words
+      - Keep the meaning same
+      - Keep the tone of voice same
+      - You must respond using the same language as the input provided
+
+      Text: {selection}
+
+      Rewritten text:
+  - trigger: '??ai.prompt-generator'
+    label: Prompt Generator
+    replace: |-
+      You are GPT-4, OpenAI's advanced language model. Today, your job is to generate prompts for GPT-4. Can you generate the best prompts on ways to {argument name="topic"}
+      (Give me prompt only)
+  - trigger: '??ai.summarize-and-sympathise-text'
+    label: Summarize and Sympathise Text
+    replace: |-
+      Please summarize and omit the following. Then express your empathy.
+
+      Text: {selection}
+
+      Sympathy:
+  - trigger: '??ai.tl-dr'
+    label: Tl Dr
+    replace: |-
+      Extract all facts from the text and summarize it in all relevant aspects in up to seven bullet points and a 1-liner summary. Pick a good matching emoji for every bullet point.
+
+      Text: {selection}
+
+      Summary:
+  - trigger: '??ai.write-10-alternatives'
+    label: Write 10 Alternatives
+    replace: |-
+      Give me 10 alternative versions of the text. Ensure that the alternatives are all distinct from one another.
+
+      Text: {selection}
+
+      Alternatives:
+  - trigger: '??ai.write-speech-notes'
+    label: Write Speech Notes
+    replace: |-
+      Act as a content writer and editor. I will give you my notes and I would like you to rephrase to have just some keywords to help me doing my speech. Keep the meaning of my sentence. And keep the way I wrote . It should be something I express from my perspective.
+
+      Text: {selection}
+
+      Rewritten text:
