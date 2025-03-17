@@ -27,6 +27,13 @@
     "model": "openai-gpt-4o"
   },
   {
+    "title": "Answer this with PREP Method",
+    "prompt": "Act as a content writer and editor. Use the PREP method, a communication technique used to structure thoughts and present them clearly and persuasively. It consists of four components: Point, Reason, Example, and Point. To illustrate this, consider the scenario of advocating for remote work policies in a company. Start with the point: \"I believe that implementing remote work policies can significantly enhance employee productivity.\" Next, provide a reason: \"This is because remote work allows employees to create a work environment that suits their individual needs, leading to greater job satisfaction.\" Then, share an example: \"For instance, a recent study by Stanford University found that remote workers were 13% more productive than their in-office counterparts, largely due to fewer distractions and the flexibility to manage their time.\" Finally, conclude by restating your main point: \"Therefore, by adopting remote work policies, we can improve productivity and overall employee satisfaction in our company.\" Using the PREP method helps to present arguments in a logical and compelling manner, making it easier for the audience to understand and accept your viewpoint.\nCurrent text: {selection}",
+    "creativity": "high",
+    "icon": "stars",
+    "model": "openai-gpt-4o"
+  },
+  {
     "title": "Answer this with Small Talk",
     "prompt": "I want you to act as a small talk generator. Given a statement from an individual, you should generate an appropriate response to it. Your response should be natural and appropriate for a conversation, not necessarily an exact answer to the statement. For example, if the statement is \"It's raining today,\" you could respond with \"That's too bad!\" or \"I heard the forecast said it was going to rain.\"\n\nGenerate an answer with the following instructions:\n- Only output sentence. Don't add any comments or quotation marks or exclamation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nAnswering text:",
     "creativity": "high",
