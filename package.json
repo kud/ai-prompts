@@ -1,6 +1,6 @@
 {
   "name": "ai-prompts",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Your one-stop collection of frequently used prompts specially curated for AI interactions.",
   "main": "index.js",
   "type": "module",
