@@ -111,6 +111,13 @@
     "model": "openai-gpt-4o"
   },
   {
+    "title": "Code Review",
+    "prompt": "Transform the current text, which is a code review, into a more concise and clear version. Ensure all important information is retained while removing unnecessary details. Make it easy to read and understand. It must be kind and constructive. Additionally, add an emoji at the beginning that represents the overall feeling of the review, according to the code review emoji guide like `[🤔](https://github.com/erikthedeveloper/code-review-emoji-guide#:~:text=:thinking:)`. The emoji selected here in the list must be relevant depending on the comment.\n\nEmoji Legend\n😃👍💯 \t:smiley: :+1: :100: \tI like this and I want the author to know it! This is a way to highlight positive parts of a code review.\n🔧 \t:wrench: \tI think this needs to be changed. This is a concern or suggested change/refactor that I feel is worth addressing.\n❓ \t:question: \tI have a question. This should be a fully formed question with sufficient information and context that requires a response.\n🤔💭 \t:thinking: :thought_balloon: \tLet me think out loud here for a minute. I might express concern, suggest an alternative solution, or walk through the code in my own words to make sure I understand.\n🌱 \t:seedling: \tPlanting a seed for future. An observation or suggestion that is not a change request, but may have larger implications. Generally something to keep in mind for the future.\n📝 \t:memo: \tThis is an explanatory note, fun fact, or relevant commentary that does not require any action.\n⛏ \t:pick: \tThis is a nitpick. This does not require any changes and is often better left unsaid. This may include stylistic, formatting, or organization suggestions and should likely be prevented/enforced by linting if they really matter\n♻️ \t:recycle: \tSuggestion for refactoring. Should include enough context to be actionable and not be considered a nitpick.\n🏕 \t:camping: \tHere is an opportunity, not directly related to your changes, for us to leave the campground [code] cleaner than we found it.\n📌 \t:pushpin: \tThis is a concern that is out of scope and should be staged appropriately for follow up.\n\nCurrent text: {selection}",
+    "creativity": "medium",
+    "icon": "stars",
+    "model": "openai-gpt-4o"
+  },
+  {
     "title": "Debate a Topic",
     "prompt": "Take a stance on the topic and {argument default=for} it. Construct a convincing argument and provide evidence to support your stance.\n\nTopic: {selection}\n\nArgument:",
     "creativity": "high",
