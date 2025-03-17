@@ -1,7 +1,7 @@
 {
   "name": "ai-prompts",
   "version": "1.4.0",
-  "description": "Your one-stop collection of frequently used prompts specially curated for AI interactions."
+  "description": "Your one-stop collection of frequently used prompts specially curated for AI interactions.",
   "main": "index.js",
   "type": "module",
   "scripts": {
