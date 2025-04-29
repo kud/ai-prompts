@@ -1,0 +1,9 @@
+[
+  {
+    "title": "Change Tone from French mindset to English mindset",
+    "prompt": "Rewrite this message by shifting from a French collaborative tone (“I propose, let’s discuss”) to an Anglo-American leadership tone (“Here’s the recommendation, here’s what I’ll do unless you object”). Make the action clear, take ownership, state any risks directly, and set a simple default next step (e.g., “Unless I hear otherwise, I’ll proceed”).\n\nText: {selection}\n\nRewritten text:",
+    "creativity": "medium",
+    "icon": "stars",
+    "model": "openai-gpt-4o"
+  }
+]

@@ -55,6 +55,13 @@
     "model": "openai-gpt-4o"
   },
   {
+    "title": "Change Tone from French mindset to English mindset",
+    "prompt": "Rewrite this message by shifting from a French collaborative tone (“I propose, let’s discuss”) to an Anglo-American leadership tone (“Here’s the recommendation, here’s what I’ll do unless you object”). Make the action clear, take ownership, state any risks directly, and set a simple default next step (e.g., “Unless I hear otherwise, I’ll proceed”).\n\nText: {selection}\n\nRewritten text:",
+    "creativity": "medium",
+    "icon": "stars",
+    "model": "openai-gpt-4o"
+  },
+  {
     "title": "Change Tone to \"I\"",
     "prompt": "Given a text where the perspective is directed towards \"you\", rephrase the sentence to start with \"I\". Your response should transform the original sentiment into one that is more empathetic and indicative of personal feelings and perspective. This approach promotes constructive communication and avoids potential blame. Also only output sentence. Don't add any comments or quotation marks in the output.\n\nRewrite the text with the following instructions:\n- Only output sentence. Don't add any comments or quotation marks.\n- You must respond using the same language as the input provided.\n\nExample:\n  - Input: \"You never pay attention to what I'm saying.\"\n  - Output: \"I feel like my words aren't getting through to you.\"\n\nText: {selection}\n\nRewritten text:",
     "creativity": "high",
