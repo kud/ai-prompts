@@ -4,7 +4,7 @@ matches:
     replace: I want you to act as a debater. I will provide you with some topics related to current events and your task is to research both sides of the debates, present valid arguments for each side, refute opposing points of view, and draw persuasive conclusions based on evidence. Your goal is to help people come away from the discussion with increased knowledge and insight into the topic at hand. My first request is "{argument name=topic}"
   - trigger: '??ai.act-as-a-judge'
     label: Act as a Judge
-    replace: 'I will present to you extracts from texts, speeches, or statements that I find interesting or controversial. Your role is to evaluate the content of the comments, analyze them, and express a judgment based on your understanding of their context, the tone used, the potential implications, and any other relevant factors. You must respond using the same language as the input provided (it could be English, French, etc.). Here is the excerpt: {selection}'
+    replace: 'I will present to you extracts from texts, speeches, or statements that I find interesting or controversial. Your role is to evaluate the content of the comments, analyze them, and express a judgment based on your understanding of their context, the tone used, the potential implications, and any other relevant factors. You must respond using the same language as the input provided (it could be English, French, etc.). Here is the excerpt: '
   - trigger: '??ai.act-as-a-skilled-software-engineer'
     label: Act as a Skilled Software Engineer
     replace: I want you to act as a skilled software engineer. I will explain to you what I want to do, and you'll explain your code to me and try to optimise it. Your program should be written in a widely used programming language, such as {argument name=languages default="JavaScript"}.
@@ -13,13 +13,13 @@ matches:
     replace: |-
       You are a social media manager. You need to add a relevant emoji as a prefix to a given sentence. The emoji should be relevant to the sentence and should be placed before the sentence. The output must be just the sentence with the emoji as a prefix.
 
-      Sentence: {selection}
+      Sentence: 
   - trigger: '??ai.add-relevant-emoji-suffix'
     label: Add Relevant Emoji Suffix
     replace: |-
       You are a social media manager. You need to add a relevant emoji as a suffix to a given sentence. The emoji should be relevant to the sentence and should be placed after the sentence. The output must be just the sentence with the emoji as a suffix.
 
-      Sentence: {selection}
+      Sentence: 
   - trigger: '??ai.answer-with-neutral'
     label: Answer with Neutral
     replace: |-
@@ -38,7 +38,7 @@ matches:
       - Only output sentence. Don't add any comments or quotation marks or exclamation marks.
       - You must respond using the same language as the input provided.
 
-      Text: {selection}
+      Text: 
 
       Answering text:
   - trigger: '??ai.ask-for-reviews'
@@ -49,7 +49,7 @@ matches:
     replace: |-
       Rewrite the following text as a concise and friendly message, phrased as a question. This should be written in a way that it can be sent in a chat application like Slack.
 
-      Text: {selection}
+      Text: 
   - trigger: '??ai.change-tone-to-i'
     label: Change Tone to I
     replace: |-
@@ -63,7 +63,7 @@ matches:
         - Input: "You never pay attention to what I'm saying."
         - Output: "I feel like my words aren't getting through to you."
 
-      Text: {selection}
+      Text: 
 
       Rewritten text:
   - trigger: '??ai.change-tone-to-optimistic'
@@ -79,7 +79,7 @@ matches:
       - Only output sentence. Don't add any comments or quotation marks.
       - You must respond using the same language as the input provided.
 
-      Text: {selection}
+      Text: 
 
       Rewritten text:
   - trigger: '??ai.change-tone-to-polite'
@@ -96,7 +96,7 @@ matches:
       - Only output sentence. Don't add any comments or quotation marks.
       - You must respond using the same language as the input provided.
 
-      Text: {selection}
+      Text: 
 
       Rewritten text:
   - trigger: '??ai.change-tone-to-politically-correct'
@@ -112,7 +112,7 @@ matches:
       - Only output sentence. Don't add any comments or quotation marks.
       - You must respond using the same language as the input provided.
 
-      Text: {selection}
+      Text: 
 
       Rewritten text:
   - trigger: '??ai.change-tone-to-posh'
@@ -129,7 +129,7 @@ matches:
       - Only output sentence. Don't add any comments or quotation marks.
       - You must respond using the same language as the input provided.
 
-      Text: {selection}
+      Text: 
 
       Rewritten text:
   - trigger: '??ai.change-tone-to-question'
@@ -147,7 +147,7 @@ matches:
       - Only output sentence. Don't add any comments or quotation marks.
       - You must respond using the same language as the input provided.
 
-      Text: {selection}
+      Text: 
 
       Rewritten text:
   - trigger: '??ai.change-tone-to-royal'
@@ -164,7 +164,7 @@ matches:
       - Only output sentence. Don't add any comments or quotation marks.
       - You must respond using the same language as the input provided.
 
-      Text: {selection}
+      Text: 
 
       Rewritten text:
   - trigger: '??ai.change-tone-to-slang'
@@ -178,7 +178,7 @@ matches:
       - Only output sentence. Don't add any comments or quotation marks.
       - You must respond using the same language as the input provided.
 
-      Text: {selection}
+      Text: 
 
       Rewritten text:
   - trigger: '??ai.change-tone-to-vulgar'
@@ -192,7 +192,7 @@ matches:
       - Only output sentence. Don't add any comments or quotation marks.
       - You must respond using the same language as the input provided.
 
-      Text: {selection}
+      Text: 
 
       Rewritten text:
   - trigger: '??ai.debate-topic'
@@ -200,7 +200,7 @@ matches:
     replace: |-
       Take a stance on the topic and {argument default=for} it. Construct a convincing argument and provide evidence to support your stance.
 
-      Topic: {selection}
+      Topic: 
 
       Argument:
   - trigger: '??ai.explain-this-in-english-and-translate-it'
@@ -272,7 +272,7 @@ matches:
       Problems:
       Nothing found - LGTM 👌
 
-      Code: {selection}
+      Code: 
 
       Problems:
   - trigger: '??ai.fix-spelling-and-grammar'
@@ -280,14 +280,13 @@ matches:
     replace: |-
       Act as a spelling corrector and improver. Rewrite the text with corrected spelling, grammar and punctuation. Don't add any comments or quotation marks. You must respond using the same language as the input provided.
 
-      Text: {selection}
+      Text: 
 
       Rewritten text:
   - trigger: '??ai.generate-ical'
     label: Generate Ical
-    replace: |-
+    replace: |
       Create an iCalendar file in a code block based on the description provided, and also suggest a filename (with .ics extension) in another code block. This is the description:
-      {selection}
   - trigger: '??ai.generate-lunch-poll'
     label: Generate Lunch Poll
     replace: I am planning to send a Slack message to my team in a channel. I would like to create a poll suggesting different times for lunch starting from {argument name=time default="12:45"}. The options should be defined by one emoji related to food (always different for each option) and a time, like "- 🍔 12:45". The message should be fun and friendly, also using emojis. Use British English language for the output.
@@ -305,7 +304,7 @@ matches:
       - Keep the tone of voice same
       - You must respond using the same language as the input provided
 
-      Text: {selection}
+      Text: 
 
       Rewritten text:
   - trigger: '??ai.prompt-generator'
@@ -318,7 +317,7 @@ matches:
     replace: |-
       Please summarize and omit the following. Then express your empathy.
 
-      Text: {selection}
+      Text: 
 
       Sympathy:
   - trigger: '??ai.tl-dr'
@@ -326,7 +325,7 @@ matches:
     replace: |-
       Extract all facts from the text and summarize it in all relevant aspects in up to seven bullet points and a 1-liner summary. Pick a good matching emoji for every bullet point.
 
-      Text: {selection}
+      Text: 
 
       Summary:
   - trigger: '??ai.write-10-alternatives'
@@ -334,7 +333,7 @@ matches:
     replace: |-
       Give me 10 alternative versions of the text. Ensure that the alternatives are all distinct from one another.
 
-      Text: {selection}
+      Text: 
 
       Alternatives:
   - trigger: '??ai.write-speech-notes'
@@ -342,6 +341,6 @@ matches:
     replace: |-
       Act as a content writer and editor. I will give you my notes and I would like you to rephrase to have just some keywords to help me doing my speech. Keep the meaning of my sentence. And keep the way I wrote . It should be something I express from my perspective.
 
-      Text: {selection}
+      Text: 
 
       Rewritten text:
