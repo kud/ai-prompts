@@ -1,7 +1,7 @@
 [
   {
     "title": "Generate iCal",
-    "prompt": "Create an iCalendar file in a code block based on the description provided, and also suggest a filename (with .ics extension) in another code block. This is the description:\n{selection}",
+    "prompt": "Create a downloadable iCalendar file based on the description provided, and also suggest a filename (with .ics extension) in another code block. This is the description:\n{selection}",
     "creativity": "low",
     "icon": "stars",
     "model": "openai-gpt-4o"
