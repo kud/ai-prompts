@@ -286,7 +286,7 @@ matches:
   - trigger: '??ai.generate-ical'
     label: Generate Ical
     replace: |
-      Create a downloadable iCalendar file based on the description provided, and also suggest a filename (with .ics extension) in another code block. This is the description:
+      Create a downloadable iCalendar file based on the description provided. This is the description:
   - trigger: '??ai.generate-lunch-poll'
     label: Generate Lunch Poll
     replace: I am planning to send a Slack message to my team in a channel. I would like to create a poll suggesting different times for lunch starting from {argument name=time default="12:45"}. The options should be defined by one emoji related to food (always different for each option) and a time, like "- 🍔 12:45". The message should be fun and friendly, also using emojis. Use British English language for the output.
