@@ -47,10 +47,21 @@ const main = async () => {
           allData.push(jsonData)
 
           const fileNameWithoutExt = path.basename(file, ".yml")
-          // Remove everything with "{selection}" for espanso output
+          // Remove everything with "{selection}", replace {argument name=xxx default="yyy"} with yyy, and {argument name=xxx} with {xxx} for espanso output
           let content = jsonData.prompt
           if (typeof content === "string") {
+            // Remove {selection}
             content = content.replace(/\{selection\}/g, "")
+            // Replace {argument name=xxx default="yyy"} with yyy
+            content = content.replace(
+              /\{argument name=([a-zA-Z0-9_-]+) default="([^"]+)"\}/g,
+              "$2",
+            )
+            // Replace {argument name=xxx} with {xxx}
+            content = content.replace(
+              /\{argument name=([a-zA-Z0-9_-]+)\}/g,
+              "{$1}",
+            )
           }
           espansoMatches.push({
             trigger: `??ai.${fileNameWithoutExt}`,

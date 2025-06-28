@@ -1,13 +1,13 @@
 matches:
   - trigger: '??ai.act-as-a-debater'
     label: Act as a Debater
-    replace: I want you to act as a debater. I will provide you with some topics related to current events and your task is to research both sides of the debates, present valid arguments for each side, refute opposing points of view, and draw persuasive conclusions based on evidence. Your goal is to help people come away from the discussion with increased knowledge and insight into the topic at hand. My first request is "{argument name=topic}"
+    replace: I want you to act as a debater. I will provide you with some topics related to current events and your task is to research both sides of the debates, present valid arguments for each side, refute opposing points of view, and draw persuasive conclusions based on evidence. Your goal is to help people come away from the discussion with increased knowledge and insight into the topic at hand. My first request is "{topic}"
   - trigger: '??ai.act-as-a-judge'
     label: Act as a Judge
     replace: 'I will present to you extracts from texts, speeches, or statements that I find interesting or controversial. Your role is to evaluate the content of the comments, analyze them, and express a judgment based on your understanding of their context, the tone used, the potential implications, and any other relevant factors. You must respond using the same language as the input provided (it could be English, French, etc.). Here is the excerpt: '
   - trigger: '??ai.act-as-a-skilled-software-engineer'
     label: Act as a Skilled Software Engineer
-    replace: I want you to act as a skilled software engineer. I will explain to you what I want to do, and you'll explain your code to me and try to optimise it. Your program should be written in a widely used programming language, such as {argument name=languages default="JavaScript"}.
+    replace: I want you to act as a skilled software engineer. I will explain to you what I want to do, and you'll explain your code to me and try to optimise it. Your program should be written in a widely used programming language, such as JavaScript.
   - trigger: '??ai.add-relevant-emoji-prefix'
     label: Add Relevant Emoji Prefix
     replace: |-
@@ -27,7 +27,7 @@ matches:
       - Use polite tone of voice.
       - Skip apologies.
       - Only output sentence. Don't add any comments or quotation marks.
-      - Use {argument name=language default="British English"} language
+      - Use British English language
       - Address as "tu"
   - trigger: '??ai.anwser-with-small-talk'
     label: Anwser with Small Talk
@@ -227,7 +227,7 @@ matches:
       ---
 
       Thanks to the template provided above, explain in simple words, provide examples, give synonyms and antonyms, and provide the French translation of this input:
-      {argument name=term}
+      {term}
   - trigger: '??ai.find-bugs-in-code'
     label: Find Bugs in Code
     replace: |-
@@ -289,7 +289,7 @@ matches:
       Create a downloadable iCalendar file based on the description provided. This is the description:
   - trigger: '??ai.generate-lunch-poll'
     label: Generate Lunch Poll
-    replace: I am planning to send a Slack message to my team in a channel. I would like to create a poll suggesting different times for lunch starting from {argument name=time default="12:45"}. The options should be defined by one emoji related to food (always different for each option) and a time, like "- 🍔 12:45". The message should be fun and friendly, also using emojis. Use British English language for the output.
+    replace: I am planning to send a Slack message to my team in a channel. I would like to create a poll suggesting different times for lunch starting from 12:45. The options should be defined by one emoji related to food (always different for each option) and a time, like "- 🍔 12:45". The message should be fun and friendly, also using emojis. Use British English language for the output.
   - trigger: '??ai.improve-writing'
     label: Improve Writing
     replace: |-
