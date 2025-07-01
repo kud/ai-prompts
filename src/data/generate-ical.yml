@@ -1,6 +1,10 @@
 title: Generate iCal
 prompt: |
-  Create a downloadable iCalendar file based on the description provided. This is the description:
+  Generate an iCalendar file based on the description provided.
+
+  Timezone: UTC
+
+  This is the description:
   {selection}
 creativity: low
 icon: stars
