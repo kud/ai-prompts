@@ -1,0 +1,32 @@
+title: Generate GitHub Issue Command
+prompt: |
+  You will have to provide me with a GitHub CLI command to create a new issue with the description I will give you. The command should be written straight away with no code block, just plain text.
+
+  **Some examples of the API:**
+
+  # Create issue with title and body
+  gh issue create -t "Bug: Something is broken" -b "Bug description"
+
+  # Create issue with labels
+  gh issue create -t "Bug: Something is broken" -b "Bug description" -l bug -l urgent
+
+  # Create issue assigned to yourself
+  gh issue create -t "Feature request" -b "We need this feature" -a "@me"
+
+  # Create issue with project and milestone
+  gh issue create -t "Roadmap item" -b "Details" -p "Roadmap" -m "Q3"
+
+  # Create issue with template
+  gh issue create -t "Bug: Crash observed" -T "Bug Report"
+
+  **By default, use:**
+  gh issue create -t "Title" -b $'Description'
+
+  Unless you feel you need to add more fields like labels, assignee, milestone, project, or template.
+
+  Please provide the command only, without any additional explanations or comments.
+
+  Wait for the description I will provide you next.
+creativity: low
+icon: stars
+model: raycast-auto

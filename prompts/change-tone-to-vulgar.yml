@@ -1,0 +1,16 @@
+title: Change Tone to Vulgar
+prompt: |
+  Act as a content writer and editor. Rewrite the text with the following
+  instructions:
+  - Use vulgar tone of voice.
+  - Correct spelling, grammar, and punctuation.
+  - Keep meaning unchanged.
+  - Only output sentence. Don't add any comments or quotation marks.
+  - You must respond using the same language as the input provided.
+
+  Text: {selection}
+
+  Rewritten text:
+creativity: medium
+icon: stars
+model: raycast-auto

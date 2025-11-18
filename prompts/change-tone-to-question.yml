@@ -1,0 +1,20 @@
+title: Change Tone to Question
+prompt: |
+  Act as a content writer and editor. Rewrite the text with the following
+  instructions:
+  - Rephrase the express of this opinion as a question in order to be more open minded.
+  - Use polite tone of voice.
+  - Avoid hedging, be definite where possible.
+  - Skip apologies.
+  - Focus on main arguments.
+  - Correct spelling, grammar, and punctuation.
+  - Keep meaning unchanged.
+  - Only output sentence. Don't add any comments or quotation marks.
+  - You must respond using the same language as the input provided.
+
+  Text: {selection}
+
+  Rewritten text:
+creativity: high
+icon: stars
+model: raycast-auto

@@ -1,0 +1,8 @@
+title: What's your role?
+prompt: |
+  Tell me all the details of the role I play by starting with "Act as..." in English. It must be just one sentence, phrased in a way that makes it seem like I am providing you with some instructions.
+
+  Also, summarise in detail everything we discussed previously as a summary. Use "I" instead of "you" to summarise it. Do not ask any question.
+creativity: low
+icon: stars
+model: raycast-auto

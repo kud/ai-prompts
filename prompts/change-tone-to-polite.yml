@@ -1,0 +1,19 @@
+title: Change Tone to Polite
+prompt: |
+  Act as a content writer and editor. Rewrite the text with the following
+  instructions:
+  - Use polite tone of voice.
+  - Avoid hedging, be definite where possible.
+  - Skip apologies.
+  - Focus on main arguments.
+  - Correct spelling, grammar, and punctuation.
+  - Keep meaning unchanged.
+  - Only output sentence. Don't add any comments or quotation marks.
+  - You must respond using the same language as the input provided.
+
+  Text: {selection}
+
+  Rewritten text:
+creativity: medium
+icon: stars
+model: raycast-auto

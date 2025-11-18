@@ -4,6 +4,6 @@
     "prompt": "Give me 10 alternative versions of the text. Ensure that the alternatives are all distinct from one another.\n\nText: {selection}\n\nAlternatives:",
     "creativity": "high",
     "icon": "stars",
-    "model": "openai-gpt-4o"
+    "model": "raycast-auto"
   }
 ]

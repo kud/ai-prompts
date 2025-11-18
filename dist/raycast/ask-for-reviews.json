@@ -4,6 +4,6 @@
     "prompt": "I would like to send a message to my team on Slack, expressing my desire to have a code review for my pull request. The message should be professional, formal, kind, positive, slightly sophisticated, and concise, with just a few emojis.",
     "creativity": "high",
     "icon": "stars",
-    "model": "openai-gpt-4o"
+    "model": "raycast-auto"
   }
 ]

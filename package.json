@@ -4,20 +4,61 @@
   "description": "One-stop collection of frequently used prompts specially curated for AI interactions",
   "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "keywords": [
+    "ai",
+    "prompts",
+    "raycast",
+    "espanso",
+    "chatgpt",
+    "copilot",
+    "text-expansion",
+    "productivity"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kud/ai-prompts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kud/ai-prompts/issues"
+  },
+  "homepage": "https://github.com/kud/ai-prompts#readme",
   "scripts": {
     "prebuild": "trash dist/",
-    "build": "node src/index.js",
-    "dev": "nodemon --ext yml --exec npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsx src/index.ts",
+    "dev": "nodemon --ext yml,ts --exec npm run build",
+    "validate": "tsx src/validate.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/ tests/",
+    "lint:fix": "eslint src/ tests/ --fix",
+    "format": "prettier --write \"**/*.{js,ts,json,md,yml}\""
   },
   "author": "Erwann Mest <m@kud.io>",
   "license": "ISC",
   "dependencies": {
+    "ajv": "8.17.1",
     "change-case": "5.4.4",
-    "js-yaml": "4.1.0",
-    "title-case": "4.3.1"
+    "js-yaml": "4.1.1",
+    "title-case": "4.3.2"
   },
   "devDependencies": {
-    "nodemon": "3.1.4"
+    "@eslint/js": "9.39.1",
+    "@types/js-yaml": "4.0.9",
+    "@types/node": "24.10.1",
+    "@typescript-eslint/eslint-plugin": "8.47.0",
+    "@typescript-eslint/parser": "8.47.0",
+    "@vitest/ui": "4.0.10",
+    "globals": "16.5.0",
+    "nodemon": "3.1.11",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "vitest": "4.0.10"
   }
 }

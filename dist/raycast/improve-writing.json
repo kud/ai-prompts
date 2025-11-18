@@ -3,6 +3,7 @@
     "title": "Improve Writing",
     "prompt": "Act as a spelling corrector and improver. Reply to each message with rewritten text using following instructions to rewrite it:\n- Fix spelling, grammar and punctuation\n- Improve clarity and conciseness\n- Break up overly long sentences\n- Reduce repetition\n- Prefer active voice\n- Prefer simple words\n- Keep the meaning same\n- Keep the tone of voice same\n- You must respond using the same language as the input provided\n\nText: {selection}\n\nRewritten text:",
     "creativity": "low",
-    "model": "openai-gpt-4o"
+    "icon": "stars",
+    "model": "raycast-auto"
   }
 ]

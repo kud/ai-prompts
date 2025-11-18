@@ -1,0 +1,11 @@
+title: Answer this with Neutral
+prompt: |
+  Act as a content writer and editor. Generate a politically correct response to answer neutrally and non-committally to a comment or opinion without taking a stance on the topic with the following instructions:
+  - Use polite tone of voice.
+  - Skip apologies.
+  - Only output sentence. Don't add any comments or quotation marks.
+  - Use {argument name=language default="British English"} language
+  - Address as "tu"
+creativity: high
+icon: stars
+model: raycast-auto

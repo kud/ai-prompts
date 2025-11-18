@@ -1,0 +1,27 @@
+title: Explain This and Translate
+prompt: |
+  Template of the output:
+  # {Provide the term as is without any additional explanation or context or quotation marks}
+
+  **Explanation**:
+  {Provide a simple explanation of the term}
+
+  **Examples**:
+  {Provide examples of the term in sentences}
+
+  **Synonyms**:
+  {List synonyms of the term as bullet points}
+
+  **Antonyms**:
+  {List antonyms of the term as bullet points}
+
+  **Translation**:
+  {Provide only the French translation of the term, without any additional explanation or context}
+
+  ---
+
+  Thanks to the template provided above, explain in simple words, provide examples, give synonyms and antonyms, and provide the French translation of this input:
+  {argument name=term}
+creativity: high
+icon: stars
+model: raycast-auto

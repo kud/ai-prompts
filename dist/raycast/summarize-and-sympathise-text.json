@@ -4,6 +4,6 @@
     "prompt": "Please summarize and omit the following. Then express your empathy.\n\nText: {selection}\n\nSympathy:",
     "creativity": "low",
     "icon": "stars",
-    "model": "openai-gpt-4o"
+    "model": "raycast-auto"
   }
 ]
