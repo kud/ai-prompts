@@ -5,6 +5,6 @@
     "creativity": "low",
     "icon": "stars",
     "highlightEdits": true,
-    "model": "openai-gpt-4o"
+    "model": "google-gemini-3-flash"
   }
 ]

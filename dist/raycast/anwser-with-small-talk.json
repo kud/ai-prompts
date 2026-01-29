@@ -4,6 +4,6 @@
     "prompt": "I want you to act as a small talk generator. Given a statement from an individual, you should generate an appropriate response to it. Your response should be natural and appropriate for a conversation, not necessarily an exact answer to the statement. For example, if the statement is \"It's raining today,\" you could respond with \"That's too bad!\" or \"I heard the forecast said it was going to rain.\"\n\nGenerate an answer with the following instructions:\n- Only output sentence. Don't add any comments or quotation marks or exclamation marks.\n- You must respond using the same language as the input provided.\n\nText: {selection}\n\nAnswering text:",
     "creativity": "high",
     "icon": "stars",
-    "model": "openai-gpt-4o"
+    "model": "google-gemini-3-flash"
   }
 ]

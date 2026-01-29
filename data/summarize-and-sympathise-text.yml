@@ -1,0 +1,10 @@
+title: Summarize and sympathize text
+prompt: |
+  Please summarize and omit the following. Then express your empathy.
+
+  Text: {selection}
+
+  Sympathy:
+creativity: low
+icon: stars
+model: google-gemini-3-flash

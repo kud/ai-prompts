@@ -1,0 +1,6 @@
+title: Generate a Lunch Poll
+prompt: |
+  I am planning to send a Slack message to my team in a channel. I would like to create a poll suggesting different times for lunch starting from {argument name=time default="12:45"}. The options should be defined by one emoji related to food (always different for each option) and a time, like "- 🍔 12:45". The message should be fun and friendly, also using emojis. Use British English language for the output.
+creativity: high
+icon: stars
+model: google-gemini-3-flash

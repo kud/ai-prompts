@@ -1,0 +1,10 @@
+title: Write 10 Alternatives
+prompt: |
+  Give me 10 alternative versions of the text. Ensure that the alternatives are all distinct from one another.
+
+  Text: {selection}
+
+  Alternatives:
+creativity: high
+icon: stars
+model: google-gemini-3-flash

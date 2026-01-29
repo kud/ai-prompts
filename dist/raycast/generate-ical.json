@@ -4,6 +4,6 @@
     "prompt": "Generate an iCalendar file based on the description provided.\n\nTimezone: UTC\n\nThis is the description:\n{selection}",
     "creativity": "low",
     "icon": "stars",
-    "model": "openai-gpt-4o"
+    "model": "google-gemini-3-flash"
   }
 ]

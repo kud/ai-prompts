@@ -19,7 +19,7 @@ const convertYAMLtoJSON = async (yamlFilePath) => {
 
 const main = async () => {
   try {
-    const sourceDir = path.resolve("src/data")
+    const sourceDir = path.resolve("data")
     const outputRaycastDir = path.resolve("dist/raycast")
     const outputEspansoDir = path.resolve("dist/espanso")
 

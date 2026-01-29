@@ -4,6 +4,6 @@
     "prompt": "I will present to you extracts from texts, speeches, or statements that I find interesting or controversial. Your role is to evaluate the content of the comments, analyze them, and express a judgment based on your understanding of their context, the tone used, the potential implications, and any other relevant factors. You must respond using the same language as the input provided (it could be English, French, etc.). Here is the excerpt: {selection}",
     "creativity": "medium",
     "icon": "stars",
-    "model": "openai-gpt-4o"
+    "model": "google-gemini-3-flash"
   }
 ]

@@ -1,0 +1,11 @@
+title: Generate iCal
+prompt: |
+  Generate an iCalendar file based on the description provided.
+
+  Timezone: UTC
+
+  This is the description:
+  {selection}
+creativity: low
+icon: stars
+model: google-gemini-3-flash
