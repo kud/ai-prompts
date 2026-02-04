@@ -1,23 +1,29 @@
 # Agents
 
-This repository is a curated collection of AI prompt YAML files that are built into distributable formats (Raycast and Espanso). It ships TypeScript/JavaScript source plus a JSON schema and tests.
+Curated AI prompt YAMLs built into Raycast and Espanso distributions. Ships TypeScript/JavaScript sources, JSON schema, and tests.
+
+## Requirements
+
+- Node.js >= 20.0.0
+- npm >= 10.0.0
 
 ## Structure
 
-- prompts/: individual prompt YAML files
-- src/: build/validation logic and schema
-- tests/: Vitest test suite
-- dist/: build outputs (generated)
+- prompts/: prompt YAMLs
+- src/: build + validation logic and schema
+- tests/: Vitest suite
+- dist/: generated outputs
 
 ## Common tasks
 
 - Install: npm install
 - Build: npm run build
+- Dev: npm run dev
 - Test: npm test
 - Lint/format: npm run lint / npm run format
 
-## Adding a prompt
+## Add a prompt
 
-1. Add a new YAML file in prompts/ following the schema in src/schema.json.
+1. Create a YAML file in prompts/ that matches src/schema.json.
 2. Run npm test and npm run build.
-3. Ensure generated outputs are correct.
+3. Verify dist/ outputs for Raycast and Espanso.
