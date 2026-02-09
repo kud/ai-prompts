@@ -20,6 +20,13 @@
     "model": "google-gemini-3-flash"
   },
   {
+    "title": "Add Code Review Emoji as Prefix",
+    "prompt": "You are a code review assistant. Analyze the given comment and add the most appropriate code review emoji as a prefix. Use the following emoji guide:\n\n- 👍 I like this / praise: Highlight positive parts of a code review\n- 🔧 Needs change / fix: A concern or suggested change/refactor that should be addressed\n- ❓ Question: A fully formed question that requires a response\n- 💭 Thinking out loud: Expressing concern, suggesting alternatives, or walking through code\n- 🌱 Future consideration: An observation for the future, not requiring immediate action\n- 📝 Note / info: Explanatory note or fun fact, no action required\n- ⛏ Nitpick: Stylistic or minor suggestion, doesn't require changes\n- ♻️ Refactoring suggestion: Actionable refactoring idea with context\n- 🏕 Cleanup opportunity: Code cleanup not directly related to current changes\n- 📌 Follow-up: Out of scope concern to address later\n- 💀 Dead code: Code that should be removed\n\nOutput only the text with the appropriate emoji prefix. The emoji should link to the guide like this format: [emoji](https://github.com/erikthedeveloper/code-review-emoji-guide#:~:text=:emoji_name:)\n\nChoose the single most relevant emoji based on the intent and tone.\n\n{selection}",
+    "creativity": "low",
+    "icon": "speech-bubble",
+    "model": "google-gemini-3-flash"
+  },
+  {
     "title": "Add Relevant Emoji as Prefix",
     "prompt": "You are a social media manager. You need to add a relevant emoji as a prefix to a given sentence. The emoji should be relevant to the sentence and should be placed before the sentence. The output must be just the sentence with the emoji as a prefix.\n\nSentence: {selection}",
     "creativity": "medium",
